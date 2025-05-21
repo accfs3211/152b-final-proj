@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/david/Desktop/final lab/project_1/project_1.xpr}
+update_compile_order -fileset sources_1

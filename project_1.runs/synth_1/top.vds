@@ -1,0 +1,582 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 21 13:46:18 2025
+# Process ID: 23640
+# Current directory: C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1/top.vds
+# Journal file: C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23148 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.586 ; gain = 97.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:6]
+	Parameter SCAN_MAX bound to: 200000 - type: integer 
+	Parameter HSEC bound to: 50000000 - type: integer 
+	Parameter RESET bound to: 3'b000 
+	Parameter RUN bound to: 3'b001 
+	Parameter PAUSE bound to: 3'b010 
+	Parameter ALL0 bound to: 3'b011 
+	Parameter ALL8 bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'debounce_sr' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:323]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce_sr' (1#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:323]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-6014] Unused sequential element newlfsr_reg was removed.  [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'top' (2#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.500 ; gain = 151.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.500 ; gain = 151.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.500 ; gain = 151.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/david/Desktop/final lab/project_1/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Users/david/Desktop/final lab/project_1/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/david/Desktop/final lab/project_1/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 802.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partialLife" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dsel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partialLife" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dsel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode71" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode72" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode73" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode76" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode77" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode710" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode714" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	  15 Input      7 Bit        Muxes := 3     
+	  28 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	  15 Input      7 Bit        Muxes := 3     
+	  28 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module debounce_sr 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "dsel" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (dsel_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (dsel_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (dsel_reg[1]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'dsel_reg[1]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+WARNING: [Synth 8-3332] Sequential element (dsel_reg[0]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'dsel_reg[0]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:114]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sc_reg[18]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[18]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[17]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[17]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[16]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[16]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[15]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[15]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[14]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[14]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[13]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[13]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[12]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[12]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[11]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[11]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[10]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[10]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[9]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[9]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[8]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[8]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[7]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[7]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[6]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[6]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[5]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[5]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[4]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[4]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[3]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[3]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[2]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[2]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[1]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[1]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (sc_reg[0]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'sc_reg[0]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:115]
+WARNING: [Synth 8-3332] Sequential element (prev_sw_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[11]' (FDE) to 'questionNum_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\questionNum_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[13]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[13]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[12]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[12]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[11]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[11]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[10]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[10]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[9]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[9]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[8]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[8]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[7]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[7]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[6]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[6]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[5]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[5]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[4]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[4]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[3]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[3]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[2]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[2]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[1]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[1]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (lfsr_reg[0]__0) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'lfsr_reg[0]__0/Q' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-3332] Sequential element (partialLife_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (questionNum_reg[12]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'correctAnswer_reg[1]' (FDE) to 'questionNum_reg[1]'
+INFO: [Synth 8-3886] merging instance 'correctAnswer_reg[0]' (FDE) to 'questionNum_reg[0]'
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[0]' (FDE) to 'questionNum_reg[6]'
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[1]' (FDE) to 'questionNum_reg[4]'
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[6]' (FDE) to 'questionNum_reg[9]'
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[10]' (FDE) to 'questionNum_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\questionNum_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (questionNum_reg[9]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 802.012 ; gain = 489.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[5]' (FDE) to 'questionNum_reg[7]'
+INFO: [Synth 8-3886] merging instance 'questionNum_reg[13]' (FDE) to 'questionNum_reg[7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     8|
+|4     |LUT2   |    55|
+|5     |LUT3   |    13|
+|6     |LUT4   |    23|
+|7     |LUT5   |    19|
+|8     |LUT6   |    81|
+|9     |FDRE   |   208|
+|10    |IBUF   |    21|
+|11    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   470|
+|2     |  dbC    |debounce_sr   |    25|
+|3     |  dbD    |debounce_sr_0 |    25|
+|4     |  dbL    |debounce_sr_1 |    25|
+|5     |  dbR    |debounce_sr_2 |    25|
+|6     |  dbU    |debounce_sr_3 |    25|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 105 critical warnings and 74 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 843.238 ; gain = 192.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.238 ; gain = 530.738
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 75 Warnings, 105 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 843.238 ; gain = 543.926
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 843.238 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 21 13:46:58 2025...
