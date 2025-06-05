@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Jun  2 12:40:41 2025
+| Date             : Wed Jun  4 12:50:17 2025
 | Host             : LLaptop running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.121        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.049        |
+| Dynamic (W)              | 0.037        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.4         |
-| Junction Temperature (C) | 25.6         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     1402 |       --- |             --- |
-|   LUT as Logic |     0.003 |      608 |     20800 |            2.92 |
-|   CARRY4       |    <0.001 |       73 |      8150 |            0.90 |
-|   Register     |    <0.001 |      558 |     41600 |            1.34 |
+| Slice Logic    |     0.004 |     1696 |       --- |             --- |
+|   LUT as Logic |     0.004 |      734 |     20800 |            3.53 |
+|   CARRY4       |    <0.001 |      100 |      8150 |            1.23 |
+|   Register     |    <0.001 |      654 |     41600 |            1.57 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
-|   Others       |     0.000 |       44 |       --- |             --- |
-| Signals        |     0.004 |     1184 |       --- |             --- |
-| I/O            |     0.038 |       49 |       106 |           46.23 |
+|   Others       |     0.000 |       42 |       --- |             --- |
+| Signals        |     0.005 |     1443 |       --- |             --- |
+| I/O            |     0.023 |       48 |       106 |           45.28 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.121 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.012 |      0.010 |
-| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.012 |       0.011 |      0.001 |
+| Vccint    |       1.000 |     0.023 |       0.014 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,31 +138,30 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| top               |     0.049 |
-|   DEB_SW[0].dbSW  |    <0.001 |
-|   DEB_SW[10].dbSW |    <0.001 |
-|   DEB_SW[11].dbSW |    <0.001 |
-|   DEB_SW[12].dbSW |    <0.001 |
-|   DEB_SW[13].dbSW |    <0.001 |
-|   DEB_SW[14].dbSW |    <0.001 |
-|   DEB_SW[15].dbSW |    <0.001 |
-|   DEB_SW[1].dbSW  |    <0.001 |
-|   DEB_SW[2].dbSW  |    <0.001 |
-|   DEB_SW[3].dbSW  |    <0.001 |
-|   DEB_SW[4].dbSW  |    <0.001 |
-|   DEB_SW[5].dbSW  |    <0.001 |
-|   DEB_SW[6].dbSW  |    <0.001 |
-|   DEB_SW[7].dbSW  |    <0.001 |
-|   DEB_SW[8].dbSW  |    <0.001 |
-|   DEB_SW[9].dbSW  |    <0.001 |
-|   dbC             |    <0.001 |
-|   dbD             |    <0.001 |
-|   dbL             |    <0.001 |
-|   dbR             |    <0.001 |
-|   dbU             |    <0.001 |
-+-------------------+-----------+
++---------------------------+-----------+
+| Name                      | Power (W) |
++---------------------------+-----------+
+| top                       |     0.037 |
+|   dbC                     |    <0.001 |
+|   dbD                     |    <0.001 |
+|   dbL                     |    <0.001 |
+|   dbR                     |    <0.001 |
+|   dbU                     |    <0.001 |
+|   gen_sw_debounce[10].dbS |    <0.001 |
+|   gen_sw_debounce[11].dbS |    <0.001 |
+|   gen_sw_debounce[12].dbS |    <0.001 |
+|   gen_sw_debounce[13].dbS |    <0.001 |
+|   gen_sw_debounce[14].dbS |    <0.001 |
+|   gen_sw_debounce[15].dbS |    <0.001 |
+|   gen_sw_debounce[1].dbS  |    <0.001 |
+|   gen_sw_debounce[2].dbS  |    <0.001 |
+|   gen_sw_debounce[3].dbS  |    <0.001 |
+|   gen_sw_debounce[4].dbS  |    <0.001 |
+|   gen_sw_debounce[5].dbS  |    <0.001 |
+|   gen_sw_debounce[6].dbS  |    <0.001 |
+|   gen_sw_debounce[7].dbS  |    <0.001 |
+|   gen_sw_debounce[8].dbS  |    <0.001 |
+|   gen_sw_debounce[9].dbS  |    <0.001 |
++---------------------------+-----------+
 
 

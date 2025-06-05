@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Jun  2 12:40:12 2025
+| Date         : Wed Jun  4 12:49:41 2025
 | Host         : LLaptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    10 |
+| Number of unique control sets                            |    11 |
 | Unused register locations in slices containing registers |    28 |
 +----------------------------------------------------------+-------+
 
@@ -35,7 +35,7 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            1 |
-|      8 |            2 |
+|      8 |            3 |
 |    16+ |            7 |
 +--------+--------------+
 
@@ -46,31 +46,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             802 |          110 |
-| No           | No                    | Yes                    |              42 |            6 |
-| No           | Yes                   | No                     |             128 |           17 |
-| Yes          | No                    | No                     |              72 |           20 |
+| No           | No                    | No                     |             986 |          143 |
+| No           | No                    | Yes                    |              42 |            5 |
+| No           | Yes                   | No                     |             128 |           18 |
+| Yes          | No                    | No                     |              72 |           19 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              72 |           12 |
+| Yes          | Yes                   | No                     |              80 |           11 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+---------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
-+----------------+---------------+---------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               | state0              |                1 |              2 |
-|  clk_IBUF_BUFG | prevScore0    |                     |                1 |              8 |
-|  clk_IBUF_BUFG | questionCount | difficulty          |                1 |              8 |
-|  clk_IBUF_BUFG |               | seg[6]_i_1_n_0      |                3 |             22 |
-|  clk_IBUF_BUFG |               | reset_edge          |                6 |             42 |
-|  clk_IBUF_BUFG |               | hcnt[25]_i_1_n_0    |                7 |             50 |
-|  clk_IBUF_BUFG |               | scnt[26]_i_1_n_0    |                6 |             54 |
-|  clk_IBUF_BUFG | led_reg       | led_reg[15]_i_1_n_0 |               11 |             64 |
-|  clk_IBUF_BUFG | led_reg0      |                     |               19 |             64 |
-|  clk_IBUF_BUFG |               |                     |              110 |            802 |
-+----------------+---------------+---------------------+------------------+----------------+
++----------------+------------------------+---------------------+------------------+----------------+
+|  Clock Signal  |      Enable Signal     |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+------------------------+---------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                        | state0              |                1 |              2 |
+|  clk_IBUF_BUFG | partialLife[3]_i_2_n_0 | difficulty          |                1 |              8 |
+|  clk_IBUF_BUFG | partialLife[3]_i_2_n_0 | partialLife         |                2 |              8 |
+|  clk_IBUF_BUFG | prevScore0             |                     |                1 |              8 |
+|  clk_IBUF_BUFG |                        | seg[6]_i_1_n_0      |                4 |             22 |
+|  clk_IBUF_BUFG |                        | reset_edge          |                5 |             42 |
+|  clk_IBUF_BUFG |                        | hcnt[25]_i_1_n_0    |                7 |             50 |
+|  clk_IBUF_BUFG |                        | scnt[26]_i_1_n_0    |                6 |             54 |
+|  clk_IBUF_BUFG | led_reg0               |                     |               18 |             64 |
+|  clk_IBUF_BUFG | led_reg                | led_reg[15]_i_1_n_0 |                8 |             64 |
+|  clk_IBUF_BUFG |                        |                     |              143 |            986 |
++----------------+------------------------+---------------------+------------------+----------------+
 
 

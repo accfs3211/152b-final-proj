@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Jun  2 12:38:01 2025
-# Process ID: 11652
+# Start of session at: Wed Jun  4 12:46:23 2025
+# Process ID: 5592
 # Current directory: C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1/top.vds
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25872 
+INFO: Helper process launched with PID 3896 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 409.457 ; gain = 96.297
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.656 ; gain = 96.098
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:9]
 	Parameter SCAN_MAX bound to: 200000 - type: integer 
 	Parameter HSEC bound to: 50000000 - type: integer 
 	Parameter RESET bound to: 3'b000 
@@ -28,14 +28,13 @@ INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/david/Desktop/final lab
 	Parameter ALL0 bound to: 3'b011 
 	Parameter ALL8 bound to: 3'b100 
 	Parameter BLANK bound to: 25000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'debounce_sr' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:382]
-	Parameter N bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce_sr' (1#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:382]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:164]
-WARNING: [Synth 8-6014] Unused sequential element newlfsr_reg was removed.  [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:251]
-INFO: [Synth 8-6155] done synthesizing module 'top' (2#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'debounce_sr' [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:473]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce_sr' (1#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:473]
+WARNING: [Synth 8-6014] Unused sequential element newlfsr_reg was removed.  [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'top' (2#1) [C:/Users/david/Desktop/final lab/project_1/project_1.srcs/sources_1/new/top.v:9]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.504 ; gain = 151.344
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 464.094 ; gain = 150.535
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -48,10 +47,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.504 ; gain = 151.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.094 ; gain = 150.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.504 ; gain = 151.344
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.094 ; gain = 150.535
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -67,30 +66,41 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 800.668 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 802.395 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
 INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "mux_idx" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "correct_edge" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "partialLife" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mux_idx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "correct_edge" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "partialLife" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numLives" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an_reg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode7" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -103,7 +113,7 @@ INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because addr
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -122,38 +132,40 @@ Detailed RTL Component Info :
 	   2 Input     14 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               27 Bit    Registers := 1     
 	               26 Bit    Registers := 1     
+	               20 Bit    Registers := 21    
 	               19 Bit    Registers := 1     
-	               16 Bit    Registers := 23    
+	               16 Bit    Registers := 4     
 	               14 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
-	                3 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 39    
+	                1 Bit    Registers := 40    
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
 	   2 Input     26 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 1     
 	   5 Input     16 Bit        Muxes := 1     
 	   4 Input     14 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
-	   4 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 7     
 	   3 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 9     
 	   5 Input      3 Bit        Muxes := 2     
 	  15 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 38    
+	   2 Input      1 Bit        Muxes := 41    
 	   5 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -172,44 +184,45 @@ Detailed RTL Component Info :
 	   2 Input     14 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               27 Bit    Registers := 1     
 	               26 Bit    Registers := 1     
 	               19 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
 	               14 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
-	                3 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 18    
+	                1 Bit    Registers := 19    
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
 	   2 Input     26 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 1     
 	   5 Input     16 Bit        Muxes := 1     
 	   4 Input     14 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
-	   4 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 7     
 	   3 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 9     
 	   5 Input      3 Bit        Muxes := 2     
 	  15 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 20    
 	   5 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 Module debounce_sr 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
@@ -232,9 +245,32 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5545] ROM "htick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "stick" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "mux_idx" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3332] Sequential element (partialLife_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/shift_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (gen_sw_debounce[0].dbS/clean_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (last_sw_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rSW1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rSW0_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,13 +282,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 800.668 ; gain = 487.508
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 802.395 ; gain = 488.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 965.164 ; gain = 652.004
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 905.266 ; gain = 591.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,7 +300,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -288,7 +324,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -301,7 +337,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -313,25 +349,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -348,56 +384,55 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    73|
-|3     |LUT1   |    35|
-|4     |LUT2   |   136|
-|5     |LUT3   |   145|
-|6     |LUT4   |    94|
-|7     |LUT5   |    54|
-|8     |LUT6   |   262|
+|2     |CARRY4 |   100|
+|3     |LUT1   |    60|
+|4     |LUT2   |   174|
+|5     |LUT3   |   143|
+|6     |LUT4   |   184|
+|7     |LUT5   |    70|
+|8     |LUT6   |   268|
 |9     |MUXF7  |     1|
 |10    |FDCE   |    21|
-|11    |FDRE   |   493|
+|11    |FDRE   |   589|
 |12    |FDSE   |    28|
-|13    |IBUF   |    22|
+|13    |IBUF   |    21|
 |14    |OBUF   |    27|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+--------------------+---------------+------+
-|      |Instance            |Module         |Cells |
-+------+--------------------+---------------+------+
-|1     |top                 |               |  1392|
-|2     |  \DEB_SW[0].dbSW   |debounce_sr    |    25|
-|3     |  \DEB_SW[10].dbSW  |debounce_sr_0  |    25|
-|4     |  \DEB_SW[11].dbSW  |debounce_sr_1  |    27|
-|5     |  \DEB_SW[12].dbSW  |debounce_sr_2  |    25|
-|6     |  \DEB_SW[13].dbSW  |debounce_sr_3  |    25|
-|7     |  \DEB_SW[14].dbSW  |debounce_sr_4  |    25|
-|8     |  \DEB_SW[15].dbSW  |debounce_sr_5  |    25|
-|9     |  \DEB_SW[1].dbSW   |debounce_sr_6  |    25|
-|10    |  \DEB_SW[2].dbSW   |debounce_sr_7  |    25|
-|11    |  \DEB_SW[3].dbSW   |debounce_sr_8  |    25|
-|12    |  \DEB_SW[4].dbSW   |debounce_sr_9  |    25|
-|13    |  \DEB_SW[5].dbSW   |debounce_sr_10 |    25|
-|14    |  \DEB_SW[6].dbSW   |debounce_sr_11 |    25|
-|15    |  \DEB_SW[7].dbSW   |debounce_sr_12 |    25|
-|16    |  \DEB_SW[8].dbSW   |debounce_sr_13 |    25|
-|17    |  \DEB_SW[9].dbSW   |debounce_sr_14 |    25|
-|18    |  dbC               |debounce_sr_15 |    25|
-|19    |  dbD               |debounce_sr_16 |    25|
-|20    |  dbL               |debounce_sr_17 |    25|
-|21    |  dbR               |debounce_sr_18 |    25|
-|22    |  dbU               |debounce_sr_19 |    25|
-+------+--------------------+---------------+------+
++------+----------------------------+---------------+------+
+|      |Instance                    |Module         |Cells |
++------+----------------------------+---------------+------+
+|1     |top                         |               |  1687|
+|2     |  dbC                       |debounce_sr    |    31|
+|3     |  dbD                       |debounce_sr_0  |    31|
+|4     |  dbL                       |debounce_sr_1  |    31|
+|5     |  dbR                       |debounce_sr_2  |    31|
+|6     |  dbU                       |debounce_sr_3  |    31|
+|7     |  \gen_sw_debounce[10].dbS  |debounce_sr_4  |    30|
+|8     |  \gen_sw_debounce[11].dbS  |debounce_sr_5  |    31|
+|9     |  \gen_sw_debounce[12].dbS  |debounce_sr_6  |    31|
+|10    |  \gen_sw_debounce[13].dbS  |debounce_sr_7  |    31|
+|11    |  \gen_sw_debounce[14].dbS  |debounce_sr_8  |    33|
+|12    |  \gen_sw_debounce[15].dbS  |debounce_sr_9  |    32|
+|13    |  \gen_sw_debounce[1].dbS   |debounce_sr_10 |    31|
+|14    |  \gen_sw_debounce[2].dbS   |debounce_sr_11 |    30|
+|15    |  \gen_sw_debounce[3].dbS   |debounce_sr_12 |    31|
+|16    |  \gen_sw_debounce[4].dbS   |debounce_sr_13 |    30|
+|17    |  \gen_sw_debounce[5].dbS   |debounce_sr_14 |    31|
+|18    |  \gen_sw_debounce[6].dbS   |debounce_sr_15 |    31|
+|19    |  \gen_sw_debounce[7].dbS   |debounce_sr_16 |    32|
+|20    |  \gen_sw_debounce[8].dbS   |debounce_sr_17 |    36|
+|21    |  \gen_sw_debounce[9].dbS   |debounce_sr_18 |    32|
++------+----------------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 973.121 ; gain = 323.797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 973.121 ; gain = 659.961
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 906.324 ; gain = 254.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 906.324 ; gain = 592.766
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -405,11 +440,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 973.121 ; gain = 673.008
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 906.324 ; gain = 605.359
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/david/Desktop/final lab/project_1/project_1.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 973.121 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 12:38:50 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 906.324 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  4 12:47:13 2025...
